@@ -32,7 +32,7 @@ Description
 -----------
 Decrypts the file "file.bin.aes" and outputs an encrypted file "file.bin"
 #>
-function Invoke-AESEncryption {
+function Invoke-RansomSim {
     [CmdletBinding()]
     [OutputType([string])]
     Param
